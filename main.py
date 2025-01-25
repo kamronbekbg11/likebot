@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 import os
-TOKEN = "8007195842:AAG2sSDJZjDu41NO0bD3PVlVTlUQKNJSFzQ"
+TOKEN = os.getenv("TOKEN")
 
 like_count = {
     "likes": 0 
